@@ -196,6 +196,54 @@ body {
  
 }
 
+/*página de campanhas - exposição*/
+
+.texto-inicial-tela2 {
+  text-align: left;
+  color: #ff3131;
+  font-size:xx-large;
+  padding: 50px;
+
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 45px;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.item {
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* Garante que a imagem não saia dos limites do card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajuste a altura máxima conforme necessário */
+    object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem distorcer */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.item h3 {
+    font-size: 1rem;
+    color: var(--secundaria);
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #7c7980;
+}
 
 
 
