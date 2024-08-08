@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -15,6 +16,12 @@
 body {
   width: 100vw;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  
+  
 }
 
 #conteudo-principal {
@@ -131,15 +138,19 @@ body {
   border-radius: 40px;
 }
 
-/*Campanhas*/
 
-.texto {
-  margin-left: 50px;
-  color: #ff3131;
-  font-size:xx-large;
-  
 
-}
+
+
+
+
+
+
+
+
+
+
+
 
 /*Campanha 2*/
 
@@ -148,6 +159,8 @@ body {
   color: #ff3131;
   font-size:xx-large;
   padding: 50px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
 
 }
 
@@ -161,42 +174,54 @@ body {
   max-width: 100%;
   width: 815px;
   aspect-ratio: 16/6;
-  display: flex;
+  
 }
 
 .texto-final {
   color: #ff3131;
   position: relative;
-  left: 33.5rem;
+  left: 450px;
   font-size: 20px;
-  
-  
-
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
-
-.flex {
-  display: flex;
-
-}
-
 .tipo-sanguineo {
   margin-left: 560px;
   padding: 5px;
   color: #ff3131;
   font-size: 35px;
-
-
+  font-family: "Open Sans", sans-serif;
+  
+ 
 }
+
+.flex {
+  display: flex;
+  position: relative;
+  
+  
+}
+
+.img5{
+  display: inline-block;
+}
+
+
 .links a {
   text-decoration: none;
   color: #ff3131;
 }
 
-.alinhar {
- 
+.icones-campanhas{
+  vertical-align: middle;
+  width: 20px;
+  height: auto;
+  margin-right: 4px;
 }
 
+
 /*página de campanhas - exposição*/
+
 
 .texto-inicial-tela2 {
   position: relative;
@@ -204,9 +229,10 @@ body {
   color: #ff3131;
   font-size: 80px;
   padding: 50px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", sans-serif;
   justify-content: space-between;
   display: flex;
+  font-weight: bold;
 }
 #title_align{
   margin-left: 9.5rem;
@@ -219,6 +245,7 @@ body {
     gap: 45px;
     margin: 2rem auto;
     max-width: 1200px;
+    
 }
 
 .item {
@@ -240,7 +267,7 @@ body {
     object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem distorcer */
     border-radius: 10px;
     margin-bottom: 1rem;
-    aspect-ratio: 12/6;
+    aspect-ratio: 11/6;
 }
 
 .item h3 {
@@ -254,6 +281,20 @@ body {
 }
 
 
+@media (max-width: 400px) {
+  nav ul li {
+      display: block; /* Estilo de bloco em telas pequenas */
+      margin: 10px 0; /* Margem vertical */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  nav ul li {
+      display: inline; /* Estilo de linha em telas médias */
+  }
+}
+
+...
 
 
 
