@@ -281,17 +281,15 @@ body {
 }
 
 
-@media screen and (max-width:900px) {
-
+@media (min-width: 320px) and (max-width:780px) {
 
 
 .texto-inicial {
-  text-align: center;
-  color: #ff3131;
-  font-size:10px;
-  padding: 50px;
-  font-weight: bold;
-  font-family: "Open Sans", sans-serif;
+ 
+  
+  font-size:15px;
+  padding: 20px;
+ 
 
 }
 
@@ -303,25 +301,33 @@ body {
   display: flex;
   border-radius: 10px;
   max-width: 100%;
-  width: 815px;
+  width: 600px;
   aspect-ratio: 16/6;
+  padding: 10px;
   
 }
 
 .texto-final {
   color: #ff3131;
-  position: relative;
-  left: 450px;
-  font-size: 20px;
+  position:relative;
+  left: 100px;
+  font-size: 25px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: inline-block
+  
 }
 .tipo-sanguineo {
-  margin-left: 560px;
-  padding: 5px;
+  margin-top: 50px;
+  margin-left: 100px;
+  padding: 1px;
   color: #ff3131;
-  font-size: 35px;
+  font-size: 20px;
   font-family: "Open Sans", sans-serif;
+  position:static;
+  display:grid;
   
  
 }
@@ -333,12 +339,8 @@ body {
   
 }
 
-.img5{
-  display: inline-block;
-}
-
-
 .links a {
+  font-size:medium;
   text-decoration: none;
   color: #ff3131;
 }
@@ -347,9 +349,76 @@ body {
   vertical-align: middle;
   width: 20px;
   height: auto;
-  margin-right: 4px;
+  margin-right: 0px;
 }
 
 }
 
-
+@media (min-width: 320px) and (max-width:780px) {
+  
+  
+  .texto-inicial-tela2 {
+    position: relative;
+    
+    color: #ff3131;
+    font-size: 15px;
+    padding: 20px;
+    font-family: "Open Sans", sans-serif;
+    justify-content: space-between;
+    display: flex;
+    font-weight: bold;
+    text-align: center
+  }
+  #title_align{
+    margin-left: 9.5rem;
+    text-align: ;
+    
+  }
+  #img-icon{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+  }
+  .card{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 45px;
+      margin: 2rem auto;
+      max-width: 350px;
+      
+      
+  }
+  
+  .item {
+      
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      overflow: hidden; /* Garante que a imagem não saia dos limites do card */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      text-align: center;
+      
+  }
+  
+  .item img {
+      width: 100%;
+      height: auto;
+      max-height: 200px; /* Ajuste a altura máxima conforme necessário */
+      object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem distorcer */
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      aspect-ratio: 16/9;
+  }
+  
+  .item h3 {
+      font-size: 1rem;
+      color: var(--secundaria);
+  }
+  
+  .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 #7c7980;
+  }
+} 
