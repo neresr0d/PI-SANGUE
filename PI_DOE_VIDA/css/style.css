@@ -301,8 +301,8 @@ body {
   display: flex;
   border-radius: 10px;
   max-width: 100%;
-  width: 600px;
-  aspect-ratio: 16/6;
+  width: 350px;
+  aspect-ratio: 16/9;
   padding: 10px;
   
 }
@@ -311,7 +311,7 @@ body {
   color: #ff3131;
   position:relative;
   left: 100px;
-  font-size: 25px;
+  font-size: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   align-items: center;
@@ -321,8 +321,8 @@ body {
 }
 .tipo-sanguineo {
   margin-top: 50px;
-  margin-left: 100px;
-  padding: 1px;
+  margin-left: 90px;
+  padding: 20px;
   color: #ff3131;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
