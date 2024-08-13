@@ -285,8 +285,6 @@ body {
 
 
 .texto-inicial {
- 
-  
   font-size:15px;
   padding: 20px;
  
@@ -359,24 +357,21 @@ body {
   
   .texto-inicial-tela2 {
     position: relative;
-    
-    color: #ff3131;
-    font-size: 15px;
-    padding: 20px;
-    font-family: "Open Sans", sans-serif;
-    justify-content: space-between;
+    font-size: 30px;
+    padding: 15px;
     display: flex;
-    font-weight: bold;
-    text-align: center
+    margin: 0 auto;
+   
+    
   }
   #title_align{
     margin-left: 9.5rem;
-    text-align: ;
+    text-align: left;
     
   }
   #img-icon{
-    position: absolute;
-    align-items: center;
+    position: relative;
+    align-items: ;
     text-align: center;
   }
   .card{
