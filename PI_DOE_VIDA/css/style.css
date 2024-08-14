@@ -145,7 +145,7 @@ body {
 .texto-inicial {
   text-align: center;
   color: #ff3131;
-  font-size:xx-large;
+  font-size: 40px;
   padding: 50px;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
@@ -206,7 +206,6 @@ body {
 
 .texto-inicial-tela2 {
   position: relative;
-  
   color: #ff3131;
   font-size: 80px;
   padding: 50px;
@@ -215,6 +214,14 @@ body {
   display: flex;
   font-weight: bold;
 }
+
+#img-icon {
+  margin-right: 200px;
+  margin-top: 20px;
+  width: 100px;
+  height: 90px;
+}
+
 #title_align{
   margin-left: 9.5rem;
 }
@@ -225,6 +232,7 @@ body {
   gap: 45px;
   margin: 2rem auto;
   max-width: 1200px;
+  cursor: pointer;
     
 }
 
